@@ -5463,6 +5463,10 @@ a.arif-btn:hover {
     display: none; } }
 
 @media (max-width: 1199.98px) {
+  .arif-btn--mini {
+    padding: 0 10px 4px; }
+  .header__nav a {
+    padding: 10px; }
   .boy-section__list-item::after {
     width: 206px; }
   .boy-section__right .boy-section__list-item:first-child::after {
@@ -5479,6 +5483,10 @@ a.arif-btn:hover {
     margin-top: 25px; } }
 
 @media (max-width: 991.98px) {
+  .arif-btn--mini {
+    padding: 0 16px 4px; }
+  .header__nav a {
+    padding: 10px 20px; }
   .header__nav {
     display: none; }
   .main-section__full-logo {
