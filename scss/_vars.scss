@@ -1,0 +1,16 @@
+$default-font: "RobotoCondensed", sans-serif;
+$text: #374246;
+$accent: #FFC501;
+$blue: #05A5EF;
+$orange: #FFA20A;
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1180px);
+$gutter: $grid-gutter-width;
+
+
+$slick-font-path: "../libs/slick/fonts/";
+$slick-loader-path: "../libs/slick/";

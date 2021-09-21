@@ -1,0 +1,141 @@
+.h2 {
+  font-size: 45px;
+  letter-spacing: 0.03em;
+}
+
+.bg-b {
+  background-color: $blue;
+}
+
+.bg-y {
+  background-color: $accent;
+}
+
+.arif-btn {
+  border-radius: 35px;
+  border: 0;
+  background-color: $accent;
+  font-size: 21px;
+
+  &--big {
+    line-height: 42px;
+    padding: 10px 35px 14px;
+  }
+
+  &--mini {
+    line-height: 29px;
+    padding: 0 16px 4px;
+  }
+}
+
+.text-blue {
+  color: $blue;
+}
+
+.text-orange {
+  color: $orange;
+}
+
+.sparks {
+  position: relative;
+
+  &::before {
+    width: 20px;
+    height: 48px;
+    left: -30px;
+    background: url("../img/left-spark.svg") no-repeat;
+  }
+
+  &::after {
+    width: 20px;
+    height: 48px;
+    right: -30px;
+    background: url("../img/right-spark.svg") no-repeat;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    background-size: contain;
+    opacity: 0.3;
+  }
+}
+
+.dashed-block {
+  border-radius: 72px;
+  padding: 15px;
+
+  &__inner {
+    border-radius: 63px;
+    overflow: hidden;
+  }
+
+  &--white {
+    border: 3px dashed rgba(255, 255, 255, 0.82);
+
+    .dashed-block__inner {
+      background-color: #fff;
+    }
+  }
+
+  &--blue {
+    border: 3px dashed $blue;
+
+    .dashed-block__inner {
+      background-color: $blue;
+    }
+  }
+
+  &--orange {
+    border: 3px dashed $orange;
+
+    .dashed-block__inner {
+      background-color: $orange;
+    }
+  }
+}
+
+.section-clouds {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+
+  &--top {
+    top: -1px;
+  }
+
+  &--bottom {
+    bottom: -1px;
+  }
+
+  img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    min-width: 1920px;
+  }
+}
+
+.zig-zag {
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 157px;
+    height: 14px;
+    background: url("../img/stok-zigzag.svg") no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+  }
+}
+
+section {
+  padding: 70px 0;
+}

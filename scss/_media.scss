@@ -1,0 +1,319 @@
+@import "vars"; /*==========  Desktop First  ==========*/
+@media screen and (max-width: 1430px) {
+  .balloon-wrapp {
+    display: none;
+  }
+}
+// ≥1200px
+@include media-breakpoint-down(lg) {
+  .boy-section {
+    &__list-item {
+      &::after {
+        width: 206px;
+      }
+    }
+
+    &__right {
+      .boy-section__list-item {
+        &:first-child {
+          &::after {
+            transform: rotate(-29deg);
+          }
+        }
+
+        &:last-child {
+          &::after {
+            transform: rotate(29deg);
+          }
+        }
+      }
+    }
+
+    &__left {
+      .boy-section__list-item {
+        &:first-child {
+          &::after {
+            transform: rotate(29deg);
+          }
+        }
+
+        &:last-child {
+          &::after {
+            transform: rotate(-29deg);
+          }
+        }
+      }
+    }
+  }
+
+  .about-as-section {
+    .h2 {
+      &::before {
+        display: none;
+      }
+    }
+
+    &__inner {
+      margin-top: 25px;
+    }
+  }
+}
+// ≥992px
+@include media-breakpoint-down(md) {
+  .header {
+    &__nav {
+      display: none;
+    }
+
+    &__brand {
+      &-description {}
+    }
+  }
+
+  .main-section {
+    &__full-logo {
+      padding: 0;
+      text-align: center;
+    }
+
+    &__heading {
+      margin: 32px 0 42px;
+    }
+  }
+
+  .scroll-bottom {
+    display: none;
+  }
+
+  .about-as-section {
+    padding: 60px 0;
+
+    &__inner {
+      margin-top: 25px;
+    }
+  }
+
+  .stock-section {
+    padding: 50px 0;
+  }
+
+  .abacus-section {
+    padding: 50px 0 20px;
+  }
+
+  .monitor-list {
+    &__number {
+      min-width: 55px;
+      height: 58px;
+      line-height: 55px;
+      font-size: 31px;
+      margin-right: 13px;
+    }
+
+    &__heading {
+      font-size: 17px;
+    }
+  }
+
+  .who-teaches-section {
+    padding: 20px 0 36px;
+
+    .dashed-block {
+      margin: auto auto 40px;
+    }
+  }
+
+  .boy-section {
+    .dashed-block {
+      position: relative;
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
+// ≥768px
+@include media-breakpoint-down(sm) {
+  .arif-btn {}
+
+  .arif-btn--mini {
+    padding-top: 3px;
+  }
+
+  .rasr-section .arif-btn {
+    padding: 10px 10px 14px;
+  }
+
+  .arif-btn--big {
+    line-height: 25px;
+  }
+
+  .clouds {
+    display: none;
+  }
+
+  section {
+    padding: 45px 0;
+  }
+
+  .dashed-block {
+    border-radius: 36px;
+
+    &__inner {
+      border-radius: 26px;
+    }
+  }
+
+  .video-section {
+    &__subheading {
+      margin-top: 20px;
+      font-size: 15px;
+    }
+  }
+
+  .advantages-section {
+    .boy-white {
+      display: none;
+    }
+
+    .h2 {
+      margin-bottom: 74px;
+    }
+  }
+
+  .advantage-item {
+    margin-bottom: 77px;
+
+    &__icon {
+      height: 90px;
+
+      img {
+        height: 86px;
+      }
+    }
+  }
+
+  .about-as-section {
+    &__inner {
+      width: 100%;
+      text-align: center;
+      margin-top: 28px;
+    }
+
+    .arif-btn {
+      margin: auto;
+    }
+
+    &__slider {
+      margin-bottom: 40px !important;
+    }
+  }
+
+  .prices-section {
+    padding-bottom: 40px;
+
+    .h2 {
+      margin-bottom: 50px;
+    }
+
+    &__inner {
+      flex-direction: column;
+    }
+
+    .prices-item {
+      margin-bottom: 20px;
+
+      &:nth-child(even) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .faq-section {
+    &__row {
+      margin-bottom: 50px;
+    }
+
+    .question {
+      margin-bottom: 17px;
+      padding-left: 0;
+
+      &::before {
+        display: none;
+      }
+
+      svg {
+        display: none;
+      }
+    }
+  }
+
+  .footer {
+    &__full-logo {
+      img {
+        display: none;
+      }
+    }
+  }
+}
+// ≥576px
+@include media-breakpoint-down(xs) {
+  .play-btn {
+    width: 70px;
+    height: 70px;
+  }
+
+  .h2 {
+    font-size: 25px;
+  }
+
+  .header {
+    height: 75px;
+
+    &.header-scrolled {
+      height: 55px;
+    }
+
+    &__nav {
+      font-size: 27px;
+    }
+
+    &__brand {
+      img {
+        height: 45px;
+      }
+
+      &-description {
+        display: none;
+      }
+    }
+  }
+
+  .main-section {
+    padding-bottom: 20px;
+
+    &__heading {
+      font-size: 39px;
+      margin: 32px 0 12px;
+    }
+
+    &__subheading {
+      margin-bottom: 28px;
+    }
+  }
+
+  .boy-section {
+    .arif-btn {
+      margin: 50px auto 0;
+      display: block;
+    }
+  }
+}
+/*==========  Mobile First  ==========*/
+// ≤576px
+@include media-breakpoint-up(sm) {}
+// ≤768px
+@include media-breakpoint-up(md) {}
+// ≤992px
+@include media-breakpoint-up(lg) {}
+// ≤1200px
+@include media-breakpoint-up(xl) {}

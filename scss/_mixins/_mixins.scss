@@ -1,0 +1,9 @@
+@mixin p-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin bg($img) {
+  background: url(../img/#{$img}) center bottom repeat-x;
+}
