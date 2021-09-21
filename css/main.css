@@ -4612,6 +4612,95 @@ a.arif-btn:hover {
   .play-btn--orange {
     background: url("../img/orange-play.svg"); }
 
+.fixed-pade {
+  overflow: hidden; }
+
+.header__navMobile {
+  display: none; }
+
+.menu-burger__header {
+  display: none; }
+
+.header__navMobile nav {
+  font-size: 22px;
+  margin-top: 15px;
+  margin-bottom: 25px; }
+  .header__navMobile nav > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+    .header__navMobile nav > ul li {
+      text-transform: uppercase;
+      font-family: Pribambas;
+      font-weight: normal;
+      letter-spacing: 0.03em;
+      text-align: center;
+      margin-bottom: 10px; }
+  .header__navMobile nav a {
+    padding: 10px 20px;
+    transition: 0.3s;
+    position: relative; }
+    .header__navMobile nav a:hover {
+      color: #FFA20A; }
+      .header__navMobile nav a:hover span::after {
+        width: 100%; }
+  .header__navMobile nav span {
+    display: inline-block;
+    position: relative; }
+    .header__navMobile nav span::after {
+      bottom: 0;
+      display: block;
+      width: 0;
+      height: 7px;
+      background: url("../img/nav-underline.svg") no-repeat center;
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: 0.3s; }
+
+.header__navMobile > div {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; }
+  .header__navMobile > div > * {
+    margin-bottom: 15px; }
+  .header__navMobile > div > div {
+    text-transform: uppercase;
+    font-family: Pribambas;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+    font-size: 20px; }
+
+.header__navMobile .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 45px;
+  position: relative; }
+  .header__navMobile .social a {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 50px;
+    background: #05A5EF;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.4s ease-in-out; }
+    .header__navMobile .social a:hover {
+      background: #FFA20A; }
+  .header__navMobile .social__icon {
+    width: 22px;
+    height: 22px; }
+
 .header {
   height: 120px;
   position: fixed;
@@ -5543,6 +5632,59 @@ a.arif-btn:hover {
     opacity: 1; } }
 
 @media (max-width: 767.98px) {
+  .header__navMobile {
+    display: block;
+    position: absolute;
+    top: 79px;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    transition: all 0.4s ease;
+    left: -100%; }
+  .header.header-scrolled .header__navMobile .header__phone {
+    opacity: 1;
+    transform: none; }
+  .header__menu {
+    display: block; }
+  .header__navMobile.open-menu {
+    left: 0; }
+  .header__menu li {
+    margin: 40px 0 40px 33px;
+    font-size: 14px; }
+  .menu-burger__header {
+    position: relative;
+    width: 40px;
+    height: 35px;
+    display: block;
+    margin-left: 10px; }
+  .menu-burger__header span,
+  .menu-burger__header:after,
+  .menu-burger__header:before {
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background: #515758;
+    margin: 0 auto; }
+  .menu-burger__header span {
+    top: 16px; }
+  .menu-burger__header:after,
+  .menu-burger__header:before {
+    content: ''; }
+  .menu-burger__header:after {
+    bottom: 5px; }
+  .menu-burger__header:before {
+    top: 5px; }
+  .menu-burger__header.open-menu span {
+    opacity: 0;
+    transition: 0.5s; }
+  .menu-burger__header.open-menu:before {
+    transform: rotate(38deg);
+    top: 16px;
+    transition: 0.4s; }
+  .menu-burger__header.open-menu:after {
+    transform: rotate(-38deg);
+    bottom: 16px;
+    transition: 0.4s; }
   .arif-btn--mini {
     padding-top: 3px; }
   .rasr-section .arif-btn {
@@ -5601,6 +5743,8 @@ a.arif-btn:hover {
     display: none; } }
 
 @media (max-width: 575.98px) {
+  .header__navMobile {
+    top: 54px; }
   .play-btn {
     width: 70px;
     height: 70px; }
