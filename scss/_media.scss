@@ -3,11 +3,19 @@
   .balloon-wrapp {
     display: none;
   }
+
+  .advantages-section .boy-white {
+    right: -250px;
+  }
 }
 // ≥1200px
 @include media-breakpoint-down(lg) {
   .arif-btn--mini {
     padding: 0 10px 4px;
+  }
+
+  .advantages-section .boy-white {
+    right: -200px;
   }
 
   .header__nav a {

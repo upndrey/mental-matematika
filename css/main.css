@@ -4468,6 +4468,23 @@ section {
   background-color: #FFC501;
   color: #fff; }
 
+.sweet-modal-box .sweet-modal-close a.sweet-modal-close-link {
+  background-image: none;
+  border: 1px solid #FFC501;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .sweet-modal-box .sweet-modal-close a.sweet-modal-close-link:before {
+    content: '✕';
+    font-size: 24px;
+    color: #FFC501; }
+  .sweet-modal-box .sweet-modal-close a.sweet-modal-close-link:hover {
+    background: #FFC501; }
+    .sweet-modal-box .sweet-modal-close a.sweet-modal-close-link:hover:before {
+      color: #fff; }
+
 body {
   font-size: 16px;
   min-width: 320px;
@@ -4900,7 +4917,7 @@ a.arif-btn:hover {
     z-index: 1; }
   .advantages-section .boy-white {
     position: absolute;
-    right: -400px;
+    right: -350px;
     top: 50%;
     transform: translateY(-50%);
     z-index: -1; }
@@ -5460,11 +5477,15 @@ a.arif-btn:hover {
 /*==========  Desktop First  ==========*/
 @media screen and (max-width: 1430px) {
   .balloon-wrapp {
-    display: none; } }
+    display: none; }
+  .advantages-section .boy-white {
+    right: -250px; } }
 
 @media (max-width: 1199.98px) {
   .arif-btn--mini {
     padding: 0 10px 4px; }
+  .advantages-section .boy-white {
+    right: -200px; }
   .header__nav a {
     padding: 10px; }
   .boy-section__list-item::after {
