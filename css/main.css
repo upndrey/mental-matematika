@@ -4636,7 +4636,7 @@ a.arif-btn:hover {
       font-weight: normal;
       letter-spacing: 0.03em;
       text-align: center;
-      margin-bottom: 10px; }
+      line-height: 40px; }
   .header__navMobile nav a {
     padding: 10px 20px;
     transition: 0.3s;
